@@ -92,15 +92,6 @@ def main(args):
     elif args.model_name == "GPT4o":
         from model.GPT4o import GPT4o
         model = GPT4o()
-    elif args.model_name == "ProxyGPT54":
-        from model.ProxyLLM import ProxyLLM
-        model = ProxyLLM(proxy_model="gpt-5.4", display_name="GPT-5.4")
-    elif args.model_name == "ProxyOpus46":
-        from model.ProxyLLM import ProxyLLM
-        model = ProxyLLM(proxy_model="claude-opus-4.6", display_name="Claude-Opus-4.6")
-    elif args.model_name == "ProxyGemini25Pro":
-        from model.ProxyLLM import ProxyLLM
-        model = ProxyLLM(proxy_model="gemini-2.5-pro", display_name="Gemini-2.5-Pro")
     elif args.model_name == "Gemini":
         from model.Gemini import Gemini
         model = Gemini()
